@@ -63,7 +63,7 @@ def _cosine_distance(M, k):
     nM = K.l2_normalize(M, axis=-1)
     cosine_distance = K.batch_dot(nM, nk)
     # TODO: Do succesfull error handling
-    #cosine_distance_error_handling = tf.Print(cosine_distance, [cosine_distance], message="NaN occured in _cosine_distance")
+    #cosine_distance_error_handling = tf.Print(cosine_distance, [cosine_distance], message="NaN occurred in _cosine_distance")
     #cosine_distance_error_handling = K.ones(cosine_distance_error_handling.shape)
     #cosine_distance = tf.case({K.any(tf.is_nan(cosine_distance)) : (lambda: cosine_distance_error_handling)},
     #        default = lambda: cosine_distance, strict=True)
